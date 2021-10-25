@@ -1,0 +1,171 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    line-height: 1.6;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+.bd {
+    border: 1px solid black;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 22px;
+    color: #2F463D;
+    margin-bottom: 10px;
+}
+
+p {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    font-weight: 200;
+    color: #828282;
+    line-height: 26px;
+}
+
+.main-container {
+    width: 60%;
+    min-width: 375px;
+    height: 709px;
+    margin: auto;
+    background-color: blue;
+    background-image: url(https://assets.codepen.io/6060109/ZigZag.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+.content-container {
+    width: 87%;
+    height: 567px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0px 40px 40px -20px #3C7B61;
+}
+
+.close-x {
+    height: 22px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.top-image img {
+    margin: 16px auto 24px;
+}
+
+.word-content-container {
+    width: 300px;
+    padding: 10px;
+    margin: auto;
+}
+
+.order-container {
+    padding: 0 5px;
+}
+
+.order-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    background-color: #F0FFF5;
+    margin: 24px 0 28px;
+    padding-right: 20px;
+}
+
+
+.price-container {
+    padding: 0 20px;
+    font-size: 14px;
+}
+
+.food {
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.price {
+    font-weight: 400;
+    color: #7A8F85;
+}
+
+.change a {
+    font-size: 13px;
+    font-weight: 600;
+    color: #467A66;
+    transition: color 0.3s ease-in-out;
+}
+
+.change a:hover {
+    color: #3f6b5a;
+}
+
+button {
+    width: 100%;
+    padding: 15px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #46A67E;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0px 20px 20px rgba(103, 189, 153, 0.2);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    transition: opacity 0.3s ease-in-out;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.dots-container {
+    display: flex;
+    justify-content: space-between;
+    width: 50px;
+    margin: auto;
+    margin-top: 36px;
+}
+
+.dot {
+    height: 7px;
+    width: 7px;
+    background-color: #E0E0E0;
+    border-radius: 50%;
+}
+
+.dot-active {
+    background-color: #67BD99;
+}
