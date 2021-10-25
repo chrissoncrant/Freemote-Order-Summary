@@ -82,7 +82,7 @@ p {
 }
 
 .top-image img {
-    margin: 16px auto 24px;
+    margin: 16px auto;
 }
 
 .word-content-container {
@@ -156,7 +156,7 @@ button:hover {
     justify-content: space-between;
     width: 50px;
     margin: auto;
-    margin-top: 36px;
+    margin-top: 42px;
 }
 
 .dot {
