@@ -195,7 +195,6 @@ button:hover {
     .main-container {
         min-width: 1440px;
         height: 900px;
-        background: #46A67E;
         justify-content: space-evenly;
     }
 
