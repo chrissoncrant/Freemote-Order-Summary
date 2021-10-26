@@ -53,26 +53,30 @@ p {
 }
 
 .main-container {
-    width: 60%;
-    min-width: 375px;
+    width: 375px;
     height: 709px;
     margin: auto;
-    background-color: blue;
     background-image: url(https://assets.codepen.io/6060109/ZigZag.png);
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     /* border: 1px solid black; */
 }
 
+.content-container-1, .content-container-3 {
+    display: none;
+}
+
 .content-container {
-    width: 87%;
+    width: 327px;
     height: 567px;
     background-color: white;
     border-radius: 5px;
     padding: 15px;
     box-shadow: 0px 40px 40px -20px #3C7B61;
+    position: relative;
 }
 
 .close-x {
@@ -89,6 +93,10 @@ p {
     width: 300px;
     padding: 10px;
     margin: auto;
+}
+
+.dish-selection-word-container {
+    margin-top: 75px;
 }
 
 .order-container {
@@ -151,6 +159,13 @@ button:hover {
     opacity: 0.8;
 }
 
+.inactive-btn {
+    background: #BDBDBD;
+    box-shadow: 0px 20px 20px #bdbdbd36;
+    margin-top: 55px;
+    margin-bottom: 20px;
+}
+
 .dots-container {
     display: flex;
     justify-content: space-between;
@@ -168,4 +183,63 @@ button:hover {
 
 .dot-active {
     background-color: #67BD99;
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .main-container {
+        min-width: 1440px;
+        height: 900px;
+        background: #46A67E;
+        justify-content: space-evenly;
+    }
+
+    .content-container-1, .content-container-3 {
+        display: block;
+    }
+
+    .content-container {
+        width: 450px;
+        height: 690px;
+        padding: 20px;
+    }
+
+    .close-x {
+        height: 31px;
+    }
+
+    .top-image img {
+        width: 150px;
+        margin-bottom: 30px;
+    }
+
+    .word-content-container {
+        width: 354px;
+        padding: 0;
+    }
+
+    h1 {
+        font-size: 28px;
+        margin-bottom: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .order-container {
+        padding: 0 28px;
+    }
+
+    .dots-container {
+        width: 65px;
+        margin-top: 78px;
+    }
+
+    .dot {
+        height: 10px;
+        width: 10px;
+    }
+
 }
